@@ -1,0 +1,44 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #F9B7FF;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Main Content Styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #FFEEF5;
+  border-radius: 10px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #FFEEF5;
+  color: #333;
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #F9B7FF;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  main {
+    padding: 10px;
+  }
+}
