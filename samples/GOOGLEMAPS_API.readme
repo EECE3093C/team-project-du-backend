@@ -1,0 +1,6 @@
+#How to get Google Maps API
+Create a Google account
+Create a project -- named "Cornucopia"
+Enable Places API in APIs & Services
+When finished enabling, the key will show up, copy and paste it into to the "GOOGLEMAPS_API_KEY.txt" 
+This project has a budget of $25 USD for trial purposes.
