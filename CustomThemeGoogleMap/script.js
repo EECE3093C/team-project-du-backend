@@ -44,8 +44,8 @@ function initMap() {
         map,
         title: "Standing Person Marker",
         icon: {
-          url: "icon/standing_person_marker.png",
-          scaledSize: new google.maps.Size(40,40) // Size(width, height[, widthUnit, heightUnit])
+          url: "icon/marker.png",
+          scaledSize: new google.maps.Size(50,50) // Size(width, height[, widthUnit, heightUnit])
         },
         animation: google.maps.Animation.DROP
       });
