@@ -20,18 +20,18 @@ function initMap() {
         "You are here marker",
         39.128221490956705,
         -84.51694299694256,
-        "icon/standing_person_marker.png",
-        40,
-        40
-      ]
+        "icon/marker.png",
+        50,
+        50
+      ],
       
       [
         "BIBIBOP Asian Grill",
         39.1284323,
         -84.51638,
-        "icon/standing_person_marker.png",
-        40,
-        40
+        "icon/marker.png",
+        50,
+        50
       ]
 
     ];
@@ -40,18 +40,18 @@ function initMap() {
     for (let i = 0; i < markers.length; i++) {
       const currMarker = markers[i];
       const standing_marker = new google.maps.Marker({
-        position: { lat: 39.128221490956705, lng: -84.51694299694256 },
+        position: { lat: currMarker[1], lng: currMarker[2] },
         map,
-        title: "Standing Person Marker",
+        title: currMarker[0],
         icon: {
-          url: "icon/marker.png",
-          scaledSize: new google.maps.Size(50,50) // Size(width, height[, widthUnit, heightUnit])
+          url: currMarker[3],
+          scaledSize: new google.maps.Size(currMarker[4], currMarker[5]) // Size(width, height[, widthUnit, heightUnit])
         },
         animation: google.maps.Animation.DROP
       });
       
       const infowindow = new google.maps.InfoWindow({
-        content: "You are standing at this location",
+        content: currMarker[0],
       });
   
       standing_marker.addListener("click", () => {
